@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Funny GIF</title>
-  <style>
-    body {
-      background-color: #000;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+  <meta http-equiv="refresh" content="0; url=https://rockstar-archive.github.io/">
+  <script>
+    (function() {
+      const newBase = "https://rockstar-archive.github.io";
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+      const redirectUrl = newBase + path + query + hash;
+      window.location.replace(redirectUrl);
+    })();
+  </script>
+  <title>Redirecting...</title>
 </head>
 <body>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODJqdXVtdTBwemttcG83Y2lyd2dwbWFyNms2MmgzYzZsdGM1MmNhYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LKqDgLlK6SuIM/giphy.gif" alt="Funny GIF">
+  <p>If you are not redirected automatically, <a id="redirectLink" href="#">click here</a>.</p>
+  <script>
+    document.getElementById("redirectLink").href = 
+      "https://rockstar-archive.github.io" + window.location.pathname + window.location.search + window.location.hash;
+  </script>
 </body>
 </html>
