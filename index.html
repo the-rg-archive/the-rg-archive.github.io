@@ -2,23 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>
-    (function() {
-      const newBase = "https://rockstar-archive.github.io";
-      const path = window.location.pathname;
-      const query = window.location.search;
-      const hash = window.location.hash;
-      const redirectUrl = newBase + path + query + hash;
-      window.location.replace(redirectUrl);
-    })();
-  </script>
+  <meta http-equiv="refresh" content="0; url=https://rockstar-archive.github.io/">
   <title>Redirecting...</title>
 </head>
 <body>
-  <p>If you are not redirected automatically, <a id="redirectLink" href="#">click here</a>.</p>
-  <script>
-    document.getElementById("redirectLink").href = 
-      "https://rockstar-archive.github.io" + window.location.pathname + window.location.search + window.location.hash;
-  </script>
+  <p>If you are not redirected automatically, <a href="https://rockstar-archive.github.io/">click here</a>.</p>
 </body>
 </html>
